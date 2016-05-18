@@ -28,20 +28,20 @@ become sick when they are in proximity to sick people, and recover when they are
 around healthy people. If we evaluate each person one by one, we can get very 
 different results depending on the order of evaluation.
 
-Lets say we have a sick person and two healthy people.
-A(sick)       B(healthy)     C(healthy)
-We update A first. A is surrounded by healthy people, so A gets better.
-A(healthy)    B(healthy)     C(healthy)
+Lets say we have a sick person and two healthy people.  
+A(sick)       B(healthy)     C(healthy)  
+We update A first. A is surrounded by healthy people, so A gets better.  
+A(healthy)    B(healthy)     C(healthy)  
 B and C then stay healthy. So if we update in the order A -> B -> C, everyone 
 gets better.
 
-Now we try a different order.
-A(sick)    B(healthy)     C(healthy)
-We update B first. B is next to a sick person, so B gets sick.
-A(sick)    B(sick)        C(healthy)
-We update C first. C is surrounded by sick people, so C gets sick.
-A(sick)    B(sick)        C(sick)
-If we update in the order B -> C -> A, everyone gets sick.
+Now we try a different order.  
+A(sick)    B(healthy)     C(healthy)  
+We update B first. B is next to a sick person, so B gets sick.  
+A(sick)    B(sick)        C(healthy)  
+We update C first. C is surrounded by sick people, so C gets sick.  
+A(sick)    B(sick)        C(sick)  
+If we update in the order B -> C -> A, everyone gets sick.  
 
 This kind of evaluation uses sequential update. We can instead get consistent 
 results using simultaneous updating. Instead of reading and updating at the same
