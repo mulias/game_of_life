@@ -2,6 +2,7 @@
 
 // set the size of the game board.
 var height = 20;
+var width = 20;
 
 // unityscript doesn't have a good way to declare 2d arrays,
 // so we're going to use a kind of ugly workaround -- make
